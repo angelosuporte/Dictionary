@@ -26,8 +26,14 @@ namespace DictionarySortedDictionary
                 Console.WriteLine("A chave 'phone' não existe");
             }
 
-
             Console.WriteLine("Size: " + cookies.Count);
+ 
+
+            Console.WriteLine("Imprimir todos os cookies: ");
+            foreach (KeyValuePair<string, string> item in cookies)
+            {
+                Console.WriteLine(item.Key + item.Value);
+            }
             Console.ReadKey();
         }
     }
