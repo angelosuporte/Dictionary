@@ -30,7 +30,7 @@ namespace DictionarySortedDictionary
  
 
             Console.WriteLine("Imprimir todos os cookies: ");
-            foreach (KeyValuePair<string, string> item in cookies)
+            foreach (var item in cookies)
             {
                 Console.WriteLine(item.Key + item.Value);
             }
