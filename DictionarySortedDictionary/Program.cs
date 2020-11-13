@@ -7,34 +7,12 @@ namespace DictionarySortedDictionary
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> cookies = new Dictionary<string, string>();
+            Dictionary<string, string> candidatos = new Dictionary<string, string>();
 
-            cookies["user"] = "Maria";
-            cookies["email"] = "maria@gmail.com";
-            cookies["phone"] = "99712234";
+            Console.Write("Informe o path completo: ");
+            string path = Console.ReadLine();
 
-            cookies.Remove("phone");
-      
-            Console.WriteLine("Usuário: " + cookies["user"]);
-            Console.WriteLine("Email:   " + cookies["email"]);
-            if (cookies.ContainsKey("phone"))
-            {
-                Console.WriteLine("Phone:   " + cookies["phone"]);
-            }
-            else
-            {
-                Console.WriteLine("A chave 'phone' não existe");
-            }
 
-            Console.WriteLine("Size: " + cookies.Count);
- 
-
-            Console.WriteLine("Imprimir todos os cookies: ");
-            foreach (var item in cookies)
-            {
-                Console.WriteLine(item.Key + item.Value);
-            }
-            Console.ReadKey();
         }
     }
 }
